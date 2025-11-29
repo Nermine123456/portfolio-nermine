@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz - Nermine Bensalah</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 site-navbar">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="index.html">Nermine Bensalah</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Basculer la navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li class="nav-item"><a href="parcours.html" class="nav-link">Parcours</a></li>
+                        <li class="nav-item"><a href="competences.html" class="nav-link">Compétences</a></li>
+                        <li class="nav-item"><a href="experiences.html" class="nav-link">Expériences</a></li>
+                        <li class="nav-item"><a href="manifestations.html" class="nav-link">Manifestations</a></li>
+                        <li class="nav-item"><a href="matieres.html" class="nav-link">Matières</a></li>
+                        <li class="nav-item"><a href="passions.html" class="nav-link">Passions</a></li>
+                        <li class="nav-item"><a href="quizz.html" class="nav-link active" aria-current="page">Quizz</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="temoignage.html" class="nav-link">Témoignage</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header text-white py-5">
+            <div class="container text-center">
+                <h1 class="display-5">Quizz sur le Développement Web</h1>
+                <p class="lead">Testez vos connaissances en développement web !</p>
+            </div>
+        </section>
+
+        <section class="quizz-section py-5">
+            <div class="container">
+                <form id="quizz-form" class="mb-4">
+                    <div class="question-item">
+                        <h3>Question 1 : Que signifie HTML ?</h3>
+                        <label><input type="radio" name="q1" value="a"> a) HyperText Markup Language</label>
+                        <label><input type="radio" name="q1" value="b"> b) High Tech Modern Language</label>
+                        <label><input type="radio" name="q1" value="c"> c) Home Tool Markup Language</label>
+                        <label><input type="radio" name="q1" value="d"> d) Hyperlink and Text Markup Language</label>
+                        <p class="correct-answer" style="display: none;">Réponse correcte : a) HyperText Markup Language</p>
+                    </div>
+
+                    <div class="question-item">
+                        <h3>Question 2 : Quel attribut HTML est utilisé pour définir un style inline ?</h3>
+                        <label><input type="radio" name="q2" value="a"> a) class</label>
+                        <label><input type="radio" name="q2" value="b"> b) style</label>
+                        <label><input type="radio" name="q2" value="c"> c) id</label>
+                        <label><input type="radio" name="q2" value="d"> d) font</label>
+                        <p class="correct-answer" style="display: none;">Réponse correcte : b) style</p>
+                    </div>
+
+                    <div class="question-item">
+                        <h3>Question 3 : Quelle balise HTML est utilisée pour créer un lien hypertexte ?</h3>
+                        <label><input type="radio" name="q3" value="a"> a) &lt;link&gt;</label>
+                        <label><input type="radio" name="q3" value="b"> b) &lt;a&gt;</label>
+                        <label><input type="radio" name="q3" value="c"> c) &lt;href&gt;</label>
+                        <label><input type="radio" name="q3" value="d"> d) &lt;url&gt;</label>
+                        <p class="correct-answer" style="display: none;">Réponse correcte : b) &lt;a&gt;</p>
+                    </div>
+
+                    <div class="question-item">
+                        <h3>Question 4 : En CSS, quelle propriété est utilisée pour changer la couleur du texte ?</h3>
+                        <label><input type="radio" name="q4" value="a"> a) text-color</label>
+                        <label><input type="radio" name="q4" value="b"> b) font-color</label>
+                        <label><input type="radio" name="q4" value="c"> c) color</label>
+                        <label><input type="radio" name="q4" value="d"> d) text-style</label>
+                        <p class="correct-answer" style="display: none;">Réponse correcte : c) color</p>
+                    </div>
+
+                    <div class="question-item">
+                        <h3>Question 5 : Quel est le sélecteur CSS pour cibler un élément par son ID ?</h3>
+                        <label><input type="radio" name="q5" value="a"> a) .id</label>
+                        <label><input type="radio" name="q5" value="b"> b) #id</label>
+                        <label><input type="radio" name="q5" value="c"> c) *id</label>
+                        <label><input type="radio" name="q5" value="d"> d) @id</label>
+                        <p class="correct-answer" style="display: none;">Réponse correcte : b) #id</p>
+                    </div>
+
+                    <div class="question-item">
+                        <h3>Question 6 : Quelle méthode JavaScript est utilisée pour sélectionner un élément par son ID ?</h3>
+                        <label><input type="radio" name="q6" value="a"> a) getElementById()</label>
+                        <label><input type="radio" name="q6" value="b"> b) getElementByClass()</label>
+                        <label><input type="radio" name="q6" value="c"> c) querySelector()</label>
+                        <label><input type="radio" name="q6" value="d"> d) selectById()</label>
+                        <p class="correct-answer" style="display: none;">Réponse correcte : a) getElementById()</p>
+                    </div>
+
+                    <div class="question-item">
+                        <h3>Question 7 : Quelle balise HTML est utilisée pour créer un formulaire ?</h3>
+                        <label><input type="radio" name="q7" value="a"> a) &lt;form&gt;</label>
+                        <label><input type="radio" name="q7" value="b"> b) &lt;input&gt;</label>
+                        <label><input type="radio" name="q7" value="c"> c) &lt;fieldset&gt;</label>
+                        <label><input type="radio" name="q7" value="d"> d) &lt;submit&gt;</label>
+                        <p class="correct-answer" style="display: none;">Réponse correcte : a) &lt;form&gt;</p>
+                    </div>
+
+                    <div class="question-item">
+                        <h3>Question 8 : En CSS, quelle propriété est utilisée pour centrer un élément horizontalement ?</h3>
+                        <label><input type="radio" name="q8" value="a"> a) align: center</label>
+                        <label><input type="radio" name="q8" value="b"> b) text-align: center</label>
+                        <label><input type="radio" name="q8" value="c"> c) margin: auto</label>
+                        <label><input type="radio" name="q8" value="d"> b) et c) sont correctes</label>
+                        <p class="correct-answer" style="display: none;">Réponse correcte : d) b) et c) sont correctes</p>
+                    </div>
+
+                    <div class="question-item">
+                        <h3>Question 9 : Quelle balise HTML sémantique est utilisée pour le contenu principal d'une page ?</h3>
+                        <label><input type="radio" name="q9" value="a"> a) &lt;main&gt;</label>
+                        <label><input type="radio" name="q9" value="b"> b) &lt;body&gt;</label>
+                        <label><input type="radio" name="q9" value="c"> c) &lt;content&gt;</label>
+                        <label><input type="radio" name="q9" value="d"> d) &lt;section&gt;</label>
+                        <p class="correct-answer" style="display: none;">Réponse correcte : a) &lt;main&gt;</p>
+                    </div>
+
+                    <div class="question-item">
+                        <h3>Question 10 : Quelle méthode JavaScript est utilisée pour ajouter un événement à un élément ?</h3>
+                        <label><input type="radio" name="q10" value="a"> a) addEventListener()</label>
+                        <label><input type="radio" name="q10" value="b"> b) attachEvent()</label>
+                        <label><input type="radio" name="q10" value="c"> c) onEvent()</label>
+                        <label><input type="radio" name="q10" value="d"> d) bindEvent()</label>
+                        <p class="correct-answer" style="display: none;">Réponse correcte : a) addEventListener()</p>
+                    </div>
+
+                    <div class="question-item">
+                        <h3>Question 11 : En CSS, quelle unité est relative à la taille de la police de l'élément parent ?</h3>
+                        <label><input type="radio" name="q11" value="a"> a) px</label>
+                        <label><input type="radio" name="q11" value="b"> b) em</label>
+                        <label><input type="radio" name="q11" value="c"> c) rem</label>
+                        <label><input type="radio" name="q11" value="d"> d) %</label>
+                        <p class="correct-answer" style="display: none;">Réponse correcte : b) em</p>
+                    </div>
+
+                    <div class="question-item">
+                        <h3>Question 12 : Quelle balise HTML est utilisée pour créer une liste non ordonnée ?</h3>
+                        <label><input type="radio" name="q12" value="a"> a) &lt;ol&gt;</label>
+                        <label><input type="radio" name="q12" value="b"> b) &lt;ul&gt;</label>
+                        <label><input type="radio" name="q12" value="c"> c) &lt;li&gt;</label>
+                        <label><input type="radio" name="q12" value="d"> d) &lt;list&gt;</label>
+                        <p class="correct-answer" style="display: none;">Réponse correcte : b) &lt;ul&gt;</p>
+                    </div>
+
+                    <div class="question-item">
+                        <h3>Question 13 : Quelle propriété CSS est utilisée pour rendre un élément flexible ?</h3>
+                        <label><input type="radio" name="q13" value="a"> a) display: flex</label>
+                        <label><input type="radio" name="q13" value="b"> b) display: block</label>
+                        <label><input type="radio" name="q13" value="c"> c) display: inline</label>
+                        <label><input type="radio" name="q13" value="d"> d) position: flex</label>
+                        <p class="correct-answer" style="display: none;">Réponse correcte : a) display: flex</p>
+                    </div>
+
+                    <div class="question-item">
+                        <h3>Question 14 : Quelle balise HTML est utilisée pour insérer une image ?</h3>
+                        <label><input type="radio" name="q14" value="a"> a) &lt;img&gt;</label>
+                        <label><input type="radio" name="q14" value="b"> b) &lt;image&gt;</label>
+                        <label><input type="radio" name="q14" value="c"> c) &lt;picture&gt;</label>
+                        <label><input type="radio" name="q14" value="d"> d) &lt;src&gt;</label>
+                        <p class="correct-answer" style="display: none;">Réponse correcte : a) &lt;img&gt;</p>
+                    </div>
+
+                    <div class="question-item">
+                        <h3>Question 15 : En JavaScript, quelle méthode est utilisée pour convertir une chaîne en nombre entier ?</h3>
+                        <label><input type="radio" name="q15" value="a"> a) parseInt()</label>
+                        <label><input type="radio" name="q15" value="b"> b) parseFloat()</label>
+                        <label><input type="radio" name="q15" value="c"> c) Number()</label>
+                        <label><input type="radio" name="q15" value="d"> a) et c) sont correctes</label>
+                        <p class="correct-answer" style="display: none;">Réponse correcte : d) a) et c) sont correctes</p>
+                    </div>
+
+                    <div class="quizz-actions">
+                        <button type="submit" class="btn-submit">Valider le Quizz</button>
+                        <button type="reset" class="btn-reset">Réinitialiser</button>
+                    </div>
+                </form>
+
+                <div id="results" class="results" style="display: none;">
+                    <h2>Résultats du Quizz</h2>
+                    <div class="score-display">
+                        <p class="score-text">Votre score : <span id="score"></span> / 15</p>
+                        <p class="percentage">Pourcentage : <span id="percentage"></span>%</p>
+                    </div>
+                    <div class="correct-answers-list">
+                        <h3>Réponses Correctes :</h3>
+                        <ul id="correct-answers-list"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 text-white text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Nermine Bensalah. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/quizz.js"></script>
+</body>
+</html>
+

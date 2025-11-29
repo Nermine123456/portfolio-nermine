@@ -1,144 +1,115 @@
-# Site Web Personnel - Nermine Bensalah
+# Rapport de Projet : Site Web Personnel
 
-## Description
-Site web personnel réalisé dans le cadre du cours de Programmation Web I. Ce site présente le parcours académique, les compétences, les expériences professionnelles et les projets de Nermine Bensalah, développeuse web Full Stack.
+**Réalisé par :** Nermine Bensalah  
+**Cadre :** Cours de Programmation Web I  
+**Date :** Novembre 2025
 
-## Structure du Projet
+---
+
+## 📑 Table des Matières
+
+1. [Introduction Générale](#introduction-générale)
+2. [Analyse et Objectifs](#analyse-et-objectifs)
+3. [Conception et Charte Graphique](#conception-et-charte-graphique)
+4. [Architecture du Projet](#architecture-du-projet)
+5. [Description des Fonctionnalités](#description-des-fonctionnalités)
+6. [Aperçu Visuel (Captures d'écran)](#aperçu-visuel)
+7. [Choix Techniques](#choix-techniques)
+8. [Conclusion](#conclusion)
+
+---
+
+## 1. Introduction Générale
+
+Ce document présente le rapport de réalisation de mon site web personnel (Portfolio). Ce projet a été conçu et développé dans le cadre du module de Programmation Web I. L'objectif principal était de créer une présence en ligne professionnelle permettant de mettre en valeur mon parcours académique, mes compétences techniques, ainsi que mes expériences et passions.
+
+Le site se veut être une vitrine interactive et dynamique, démontrant non seulement mon contenu personnel mais aussi ma maîtrise des technologies web fondamentales (HTML, CSS, JavaScript).
+
+## 2. Analyse et Objectifs
+
+### Objectifs Principaux
+- **Présentation Personnelle :** Offrir une vue d'ensemble claire de mon profil (Bio, CV, Contact).
+- **Démonstration Technique :** Prouver mes compétences en développement web à travers la réalisation même du site.
+- **Interactivité :** Engager le visiteur avec des éléments dynamiques comme un quizz et des formulaires.
+
+### Public Cible
+Ce portfolio s'adresse principalement aux recruteurs, professeurs, et pairs souhaitant en savoir plus sur mon profil professionnel et académique.
+
+## 3. Conception et Charte Graphique
+
+Le design du site a été pensé pour être à la fois **professionnel** et **accueillant**.
+- **Palette de couleurs :** Utilisation de couleurs douces et modernes pour une lecture agréable.
+- **Typographie :** Choix de polices lisibles et modernes pour assurer une bonne hiérarchie visuelle.
+- **Expérience Utilisateur (UX) :** Navigation intuitive via un menu fixe et une structure de page cohérente.
+
+## 4. Architecture du Projet
+
+L'arborescence du projet est structurée de manière logique pour faciliter la maintenance et l'évolution.
 
 ```
 PROJET WEB/
 │
-├── index.html              # Page d'accueil
-├── parcours.html           # Page parcours académique
-├── competences.html        # Page compétences informatiques
-├── experiences.html        # Page stages et expériences professionnelles
-├── manifestations.html     # Page manifestations scientifiques
-├── matieres.html           # Page matières étudiées et projets
-├── passions.html           # Page passions et qualités
-├── quizz.html              # Page quizz sur le développement web
-├── contact.html            # Page de contact avec formulaire
-├── temoignage.html         # Page témoignage sur l'IIT
+├── index.html              # Accueil (Vitrine principale)
+├── parcours.html           # Chronologie académique
+├── competences.html        # Showcase technique
+├── experiences.html        # Parcours professionnel
+├── manifestations.html     # Vie associative et événements
+├── matieres.html           # Détails du cursus
+├── passions.html           # Loisirs et Soft skills
+├── quizz.html              # Module interactif (JS)
+├── contact.html            # Formulaire de contact
+├── temoignage.html         # Retour d'expérience
 │
 ├── css/
-│   └── style.css           # Fichier CSS principal
+│   └── style.css           # Feuille de style globale
 │
 ├── js/
-│   ├── quizz.js            # Script JavaScript pour le quizz
-│   └── contact.js           # Script JavaScript pour le formulaire de contact
+│   ├── quizz.js            # Logique du quizz
+│   └── contact.js          # Validation formulaire
 │
-├── images/
-│   ├── profile.jpg         # Photo de profil
-│   ├── diplome.jpg         # Image du diplôme
-│   ├── event1.jpg          # Photo manifestation 1
-│   ├── event2.jpg          # Photo manifestation 2
-│   ├── event3.jpg          # Photo manifestation 3
-│   ├── event4.jpg          # Photo manifestation 4
-│   ├── passion-dev.jpg     # Photo passion développement
-│   ├── passion-design.jpg  # Photo passion design
-│   └── passion-3d.jpg       # Photo passion 3D
-│
-└── README.md               # Ce fichier
-
+└── images/                 # Ressources graphiques
+    └── screenshots/        # Captures du projet
 ```
 
-## Pages du Site
+## 5. Description des Fonctionnalités
 
-### 1. Page d'Accueil (index.html)
-- Titre du site web
-- Menu de navigation
-- Biographie succincte
-- Icônes de liens vers les réseaux sociaux
-- Informations de contact
+Le site est composé de plusieurs pages interconnectées :
 
-### 2. Parcours Académique (parcours.html)
-- Description du parcours éducatif
-- Diplômes obtenus avec dates et établissements
-- Images des diplômes
+- **Accueil :** Point d'entrée avec une présentation succincte et des accès rapides.
+- **Parcours & Expériences :** Pages détaillées utilisant des mises en page structurées pour lister les diplômes et stages.
+- **Compétences :** Utilisation de barres de progression visuelles pour indiquer le niveau de maîtrise des outils.
+- **Quizz Interactif :** Une page ludique permettant de tester ses connaissances en développement web, entièrement gérée en JavaScript (calcul de score en temps réel).
+- **Contact :** Formulaire fonctionnel avec validation des champs côté client.
 
-### 3. Compétences (competences.html)
-- Langages de programmation et frameworks
-- Bases de données
-- Outils de design
-- Autres compétences (Git, UI/UX, etc.)
-- Langues maîtrisées
-- Barres de progression visuelles
+## 6. Aperçu Visuel
 
-### 4. Expériences Professionnelles (experiences.html)
-- Stages réalisés avec descriptions détaillées
-- Lieu, durée et objectifs de chaque expérience
-- Technologies utilisées
-- Réalisations
+Voici quelques captures d'écran illustrant le rendu final du projet sur différents terminaux.
 
-### 5. Manifestations Scientifiques (manifestations.html)
-- Conférences, formations et événements
-- Photos des manifestations
-- Dates et lieux
+### Vue d'ensemble
+| Aperçu 1 | Aperçu 2 |
+|:---:|:---:|
+| ![Capture 1](images/screenshots/image.png) | ![Capture 2](images/screenshots/image%20copy.png) |
 
-### 6. Matières Étudiées (matieres.html)
-- Matières suivies pendant le cursus
-- Projets académiques réalisés
-- Travaux pratiques
+### Détails et Interactions
+| Aperçu 3 | Aperçu 4 |
+|:---:|:---:|
+| ![Capture 3](images/screenshots/image%20copy%202.png) | ![Capture 4](images/screenshots/image%20copy%203.png) |
 
-### 7. Passions (passions.html)
-- Passions personnelles
-- Sports préférés
-- Qualités personnelles
-- Photos illustratives
+## 7. Choix Techniques
 
-### 8. Quizz (quizz.html)
-- Formulaire HTML avec 15 questions sur le développement web
-- Calcul automatique du score avec JavaScript
-- Affichage des réponses correctes
-- Pourcentage de réussite
+Pour réaliser ce projet, j'ai opté pour une approche "Vanilla" afin de maîtriser les bases avant d'utiliser des frameworks.
 
-### 9. Contact (contact.html)
-- Formulaire HTML pour envoyer un email
-- Validation des champs
-- Informations de contact
+- **HTML5 :** Utilisation intensive des balises sémantiques (`<header>`, `<nav>`, `<section>`, `<footer>`) pour un code propre et accessible.
+- **CSS3 :**
+    - Utilisation de **Flexbox** et **Grid** pour les mises en page complexes.
+    - **Variables CSS** (:root) pour une gestion facile des couleurs.
+    - **Media Queries** pour assurer le *Responsive Design* sur mobile et tablette.
+- **JavaScript (ES6) :** Manipulation du DOM pour le quizz et la validation de formulaire, sans dépendance externe (comme jQuery).
 
-### 10. Témoignage (temoignage.html)
-- Témoignage sur l'Institut International de Technologie (IIT)
-- Expérience académique
-- Points forts de la formation
+## 8. Conclusion
 
-## Technologies Utilisées
+Ce projet m'a permis de consolider mes connaissances en développement web front-end. J'ai pu mettre en pratique les concepts théoriques vus en cours et faire face aux défis réels du développement (compatibilité, responsive design, organisation du code). Le résultat est un site fonctionnel, esthétique et évolutif qui servira de base solide pour mon futur portfolio professionnel.
 
-- **HTML5** : Structure sémantique des pages
-- **CSS3** : Styles modernes et responsives
-- **JavaScript** : Fonctionnalités interactives (quizz, formulaire)
-- **Font Awesome** : Icônes pour l'interface
-
-## Caractéristiques Techniques
-
-- Utilisation de balises sémantiques HTML5 (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`)
-- Design responsive (adapté aux mobiles, tablettes et ordinateurs)
-- Navigation cohérente sur toutes les pages
-- Formulaire de quizz interactif avec calcul de score
-- Formulaire de contact avec validation
-- Styles CSS modernes avec variables CSS
-- Utilisation de Flexbox et Grid pour la mise en page
-
-## Utilisation
-
-1. Ouvrir `index.html` dans un navigateur web
-2. Naviguer entre les pages via le menu de navigation
-3. Tester le quizz sur la page `quizz.html`
-4. Utiliser le formulaire de contact pour envoyer un message
-
-## Notes
-
-- Les images dans le dossier `images/` doivent être ajoutées manuellement
-- Le formulaire de contact utilise `mailto:` pour ouvrir le client de messagerie
-- Le quizz calcule automatiquement le score et affiche les réponses correctes
-
-## Auteur
-
-**Nermine Bensalah**
-- Email: bensalahnermin250@gmail.com
-- LinkedIn: [Nermine Ben Salah](https://www.linkedin.com/in/nermine-ben-salah)
-- Localisation: Nabeul, Tunisie
-
-## Licence
-
-Ce projet est réalisé dans le cadre d'un projet académique.
+---
+*Généré automatiquement le 30 Novembre 2025*
 
